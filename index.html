@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>A random quiz</title>
+  </head>
+  <body>
+    <main class="container">
+      <div id="main">
+        <h1>Click Start to Begin Quiz</h1>
+        <button id="start">START</button>
+      </div>
+
+      <div id="qDiv" style = "display: none">
+        <!--Timer section-->
+        <div class="timer">
+          <div id="timer_sec">60 </br>sec</div>
+        </div>
+        <!--Questions section-->
+        <div id="question"></div>
+        <div id="choices">
+          <button class="choice" id="A" onclick="checkAnswer('A')"></button>
+          <button class="choice" id="B" onclick="checkAnswer('B')"></button>
+          <button class="choice" id="C" onclick="checkAnswer('C')"></button>
+          <button class="choice" id="D" onclick="checkAnswer('D')"></button>
+        </div>
+    </main>
+
+    <section>
+        <div id="scoreContainer" style = "display: none"></div>
+
+    </section>
+    <script src="assets/js/app.js"></script>
+
+  </body>
+</html>
