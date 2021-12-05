@@ -38,7 +38,7 @@ button:active{
     transform: scale(.9);
 }
 
-#qDiv {
+#quiz {
     margin: 0 auto;
     display: none;
 }
